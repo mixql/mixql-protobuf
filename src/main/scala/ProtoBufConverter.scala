@@ -1,4 +1,4 @@
-import org.mixql.protobuf.messages.clientMsgs.*
+import org.mixql.protobuf.messages.clientMsgs._
 
 import scala.util.Try
 
