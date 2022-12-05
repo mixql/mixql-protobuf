@@ -1,6 +1,9 @@
+package org.mixql.protobuf
+
 import org.mixql.protobuf.messages.clientMsgs._
 
 import scala.util.Try
+
 
 object ProtoBufConverter {
   def unpackAnyMsg(array: scala.Array[Byte]): scalapb.GeneratedMessage = {
