@@ -7,7 +7,7 @@ val ScalaVersions = Seq(Scala212, Scala213, Scala3)
 
 inThisBuild(
   List(
-    organization := "com.mixql",
+    organization := "org.mixql",
     homepage := Some(url("https://github.com/mixql/mixql-protobuf.git")),
     licenses := List(
       "Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0")
