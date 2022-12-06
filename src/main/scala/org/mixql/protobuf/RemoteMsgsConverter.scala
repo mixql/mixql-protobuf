@@ -1,4 +1,4 @@
-package org.mixql.cluster
+package org.mixql.protobuf
 
 import org.mixql.protobuf.messages.clientMsgs
 
