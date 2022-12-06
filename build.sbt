@@ -37,6 +37,7 @@ lazy val root = project.in(file("."))
       "com.thesamet.scalapb" %% "scalapb-runtime-grpc" % scalapb.compiler.Version.scalapbVersion,
       "com.thesamet.scalapb.common-protos" %% "proto-google-common-protos-scalapb_0.11" % "2.9.6-0" % "protobuf",
       "com.thesamet.scalapb.common-protos" %% "proto-google-common-protos-scalapb_0.11" % "2.9.6-0",
-      "org.scalameta" %% "munit" % "0.7.29" % Test
+      "org.scalameta" %% "munit" % "0.7.29" % Test,
+      "org.mixql" %% "mixql-core" % "0.1.0-SNAPSHOT"
     )
   )
