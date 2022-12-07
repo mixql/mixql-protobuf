@@ -1,3 +1,3 @@
-# Mixql Core
+# Mixql Protobuf
 
-[![codecov](https://codecov.io/gh/mixql/mixql-core/branch/develop/graph/badge.svg?token=6pvRE15adp)](https://codecov.io/gh/mixql/mixql-core)
+The project contains messages for the [mixql-cluster](https://github.com/mixql/mixql-cluster).
