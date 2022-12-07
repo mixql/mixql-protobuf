@@ -5,11 +5,14 @@ object ScalaCompilerSettings {
   val stdOptions =
     Seq("-feature", "-deprecation")
 
+  def stdSettings =
+    Seq(scalacOptions := extraOptions(scalaVersion.value))
+
   def extraOptions(scalaVersion: String): Seq[String] = {
     CrossVersion.partialVersion(scalaVersion) match {
       case Some((2, 13)) => stdOptions
       case Some((2, 12)) => stdOptions
-      case Some((3,_)) =>
+      case Some((3, _)) =>
         Seq(
           "-feature",
           "-deprecation",
@@ -25,9 +28,4 @@ object ScalaCompilerSettings {
         )
     }
   }
-
-  def stdSettings =
-    Seq(
-      scalacOptions := extraOptions(scalaVersion.value)
-    )
 }
