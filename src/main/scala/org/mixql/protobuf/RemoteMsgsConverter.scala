@@ -24,6 +24,7 @@ object RemoteMsgsConverter {
                 case msg: clientMsgs.Int    => gtype.int(msg.value)
                 case msg: clientMsgs.Double => gtype.double(msg.value)
                 case msg: clientMsgs.String => gtype.string(msg.value)
+                case msg: clientMsgs.Array => toGtype(msg)
                 case a: Any =>
                   throw new Exception(
                     s"RemoteMsgsConverter: toGtype error:  " +
