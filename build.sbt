@@ -1,8 +1,7 @@
-ThisBuild / scalaVersion := "3.2.1"
-
 lazy val root = project
   .in(file("."))
   .settings(
+    ThisBuild / scalaVersion := "3.2.1",
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
     organization := "org.mixql",
     name := "mixql-protobuf",
