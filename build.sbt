@@ -5,7 +5,7 @@ lazy val root = project
     credentials += Credentials(Path.userHome / ".sbt" / "sonatype_credentials"),
     organization := "org.mixql",
     name := "mixql-protobuf",
-    version := "0.1.0-SNAPSHOT",
+    version := "0.1.0",
     organizationName := "MixQL",
     organizationHomepage := Some(url("https://mixql.org/")),
     description := "MixQL messages.",
@@ -21,7 +21,7 @@ lazy val root = project
       "com.thesamet.scalapb.common-protos" %% "proto-google-common-protos-scalapb_0.11" % "2.9.6-0" % "protobuf",
       "com.thesamet.scalapb.common-protos" %% "proto-google-common-protos-scalapb_0.11" % "2.9.6-0",
       "org.scalameta" %% "munit"      % "0.7.29" % Test,
-      "org.mixql"     %% "mixql-core" % "0.1.0-SNAPSHOT"
+      "org.mixql"     %% "mixql-core" % "0.1.0"
     ),
     licenses := List(
       "Apache 2" -> new URL("http://www.apache.org/licenses/LICENSE-2.0.txt")
